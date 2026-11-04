@@ -1676,7 +1676,7 @@ function renderMapa(andarDestaque = null, salaDestaque = null, pushHash = true) 
   }
 
   const andaresOrdem = Object.keys(predio);
-  const mapaIlustradoUrl = '/planta-feira-ciencias';
+  const mapaIlustradoUrl = '/planta-feira-ciencias.jpeg';
 
 
   const html = `

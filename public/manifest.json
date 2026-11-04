@@ -1,0 +1,18 @@
+{
+  "background_color": "#020617",
+  "description": "Guia interativo da Feira de Ciências e Mostra Cultural 2026 - ODS em Ação: Tecnologia, Sustentabilidade e Futuro",
+  "display": "standalone",
+  "icons": [
+    {
+      "purpose": "any maskable",
+      "sizes": "192x192 512x512",
+      "src": "/favicon.svg",
+      "type": "image/svg+xml"
+    }
+  ],
+  "name": "EXPO ODS FUTURO 2026 | Instituto Educacional Missão Paz",
+  "orientation": "portrait",
+  "short_name": "EXPO ODS 2026",
+  "start_url": "/",
+  "theme_color": "#020617"
+}

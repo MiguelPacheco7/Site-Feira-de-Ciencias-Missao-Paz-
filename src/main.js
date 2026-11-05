@@ -10,6 +10,62 @@ const IMG_FALLBACK = "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.
 // DADOS DO SISTEMA (100% CONFORME COM A REGRA DE PRIVACIDADE)
 // ============================================================
 
+const imagens6Ano = Object.entries(
+  import.meta.glob(
+    './assets/Img-6ano/**/*.{avif,gif,jpg,jpeg,png,webp,AVIF,GIF,JPG,JPEG,PNG,WEBP}',
+    {
+      eager: true,
+      query: '?url',
+      import: 'default',
+    }
+  )
+)
+  .sort(([a], [b]) => a.localeCompare(b, 'pt-BR', { numeric: true }))
+  .map(([, url]) => url);
+
+
+const imagens7Ano = Object.entries(
+  import.meta.glob(
+    './assets/Img-7ano/**/*.{avif,gif,jpg,jpeg,png,webp,AVIF,GIF,JPG,JPEG,PNG,WEBP}',
+    {
+      eager: true,
+      query: '?url',
+      import: 'default',
+    }
+  )
+)
+  .sort(([a], [b]) => a.localeCompare(b, 'pt-BR', { numeric: true }))
+  .map(([, url]) => url);
+
+  
+const imagens8Ano = Object.entries(
+  import.meta.glob(
+    './assets/Img-8ano/**/*.{avif,gif,jpg,jpeg,png,webp,AVIF,GIF,JPG,JPEG,PNG,WEBP}',
+    {
+      eager: true,
+      query: '?url',
+      import: 'default',
+    }
+  )
+)
+  .sort(([a], [b]) => a.localeCompare(b, 'pt-BR', { numeric: true }))
+  .map(([, url]) => url);
+
+
+const imagens9Ano = Object.entries(
+  import.meta.glob(
+    './assets/Img-9ano/**/*.{avif,gif,jpg,jpeg,png,webp,AVIF,GIF,JPG,JPEG,PNG,WEBP}',
+    {
+      eager: true,
+      query: '?url',
+      import: 'default',
+    }
+  )
+)
+  .sort(([a], [b]) => a.localeCompare(b, 'pt-BR', { numeric: true }))
+  .map(([, url]) => url);
+
+
 const projetos = [
   {
     id: 1,
@@ -40,15 +96,7 @@ const projetos = [
     ],
     materiais: ['Arduino / Micro:bit', 'Sensor de nível de água por contato', 'LEDs indicadores (Verde/Amarelo/Vermelho)', 'Buzzer alarme sonoro', 'Maquete de caixa d\'água', 'Display LCD'],
     resultados: 'Detecção imediata de variações de nível com alerta de transbordamento em menos de 2 segundos.',
-    imagens: [
-      'src/assets/Img-6ano/img1.jpeg',
-      'src/assets/Img-6ano/img2.jpeg',
-      'src/assets/Img-6ano/img3.jpeg',
-      'src/assets/Img-6ano/img4.jpeg',
-      'src/assets/Img-6ano/img5.jpeg',
-      'src/assets/Img-6ano/img7.jpeg',
-      'src/assets/Img-6ano/img6.jpeg'
-    ],
+    imagens: imagens6Ano,
     equipeQtd: 4,
     professor: 'Corpo Docente do 6º Ano'
   },
@@ -81,10 +129,7 @@ const projetos = [
     ],
     materiais: ['Portal Web EcoLab Digital', 'Resíduos plásticos PET e tampinhas', 'Papelão e embalagens longa vida', 'Composteira didática', 'Tintas ecológicas'],
     resultados: 'Mapeamento de 100% dos resíduos escolares e criação de mais de 25 artefatos utilitários reaproveitados.',
-    imagens: [
-      'src/assets/Img-7ano/img8.jpeg',
-      'src/assets/Img-7ano/img9.jpeg'
-    ],
+    imagens: imagens7Ano,
     equipeQtd: 4,
     professor: 'Corpo Docente do 7º Ano'
   },
@@ -117,20 +162,7 @@ const projetos = [
     ],
     materiais: ['ESP32 com módulo Wi-Fi', 'Sensor DHT22 (temperatura e umidade)', 'Sensor LDR de luminosidade', 'Display OLED informativo', 'Dashboard web de telemetria'],
     resultados: 'Monitoramento ininterrupto 24/7 com atualização de dados a cada 10 segundos no mural digital.',
-    imagens: [
-      'src/assets/Img-8ano/img10.jpeg',
-      'src/assets/Img-8ano/img11.jpeg',
-      'src/assets/Img-8ano/img12.jpeg',
-      'src/assets/Img-8ano/img13.jpeg',
-      'src/assets/Img-8ano/img14.jpeg',
-      'src/assets/Img-8ano/img15.jpeg',
-      'src/assets/Img-8ano/img16.jpeg',
-      'src/assets/Img-8ano/img17.jpeg',
-      'src/assets/Img-8ano/img18.jpeg',
-      'src/assets/Img-8ano/img19.jpeg',
-      'src/assets/Img-8ano/img20.jpeg',
-      'src/assets/Img-8ano/img21.jpeg'
-    ],
+    imagens: imagens8Ano,
     equipeQtd: 4,
     professor: 'Corpo Docente do 8º Ano'
   },
@@ -163,11 +195,7 @@ const projetos = [
     ],
     materiais: ['Maquete em escala física', 'Placas solares fotovoltaicas mini', 'Sensores de presença infravermelhos (PIR)', 'Semáforos com LEDs e Arduino', 'Peças modeladas em 3D'],
     resultados: 'Simulação com 40% de redução no consumo de energia na iluminação pública através de automação responsiva.',
-    imagens: [
-      'src/assets/Img-9ano/img22.jpeg',
-      'src/assets/Img-9ano/img23.jpeg',
-      'src/assets/Img-9ano/img24.jpeg'
-    ],
+    imagens: imagens9Ano,
     equipeQtd: 4,
     professor: 'Corpo Docente do 9º Ano'
   },

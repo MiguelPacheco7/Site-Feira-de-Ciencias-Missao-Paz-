@@ -41,9 +41,13 @@ const projetos = [
     materiais: ['Arduino / Micro:bit', 'Sensor de nível de água por contato', 'LEDs indicadores (Verde/Amarelo/Vermelho)', 'Buzzer alarme sonoro', 'Maquete de caixa d\'água', 'Display LCD'],
     resultados: 'Detecção imediata de variações de nível com alerta de transbordamento em menos de 2 segundos.',
     imagens: [
-      'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=1200'
+      'src/assets/Img-6ano/img1.jpeg',
+      'src/assets/Img-6ano/img2.jpeg',
+      'src/assets/Img-6ano/img3.jpeg',
+      'src/assets/Img-6ano/img4.jpeg',
+      'src/assets/Img-6ano/img5.jpeg',
+      'src/assets/Img-6ano/img7.jpeg',
+      'src/assets/Img-6ano/img6.jpeg'
     ],
     equipeQtd: 4,
     professor: 'Corpo Docente do 6º Ano'
@@ -78,9 +82,8 @@ const projetos = [
     materiais: ['Portal Web EcoLab Digital', 'Resíduos plásticos PET e tampinhas', 'Papelão e embalagens longa vida', 'Composteira didática', 'Tintas ecológicas'],
     resultados: 'Mapeamento de 100% dos resíduos escolares e criação de mais de 25 artefatos utilitários reaproveitados.',
     imagens: [
-      'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1528323273322-d81458248d40?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=1200'
+      'src/assets/Img-7ano/img8.jpeg',
+      'src/assets/Img-7ano/img9.jpeg'
     ],
     equipeQtd: 4,
     professor: 'Corpo Docente do 7º Ano'
@@ -115,9 +118,18 @@ const projetos = [
     materiais: ['ESP32 com módulo Wi-Fi', 'Sensor DHT22 (temperatura e umidade)', 'Sensor LDR de luminosidade', 'Display OLED informativo', 'Dashboard web de telemetria'],
     resultados: 'Monitoramento ininterrupto 24/7 com atualização de dados a cada 10 segundos no mural digital.',
     imagens: [
-      'https://images.unsplash.com/photo-1590055531615-f16d36ffe8ec?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1527482797697-8795b05a13fe?auto=format&fit=crop&q=80&w=1200'
+      'src/assets/Img-8ano/img10.jpeg',
+      'src/assets/Img-8ano/img11.jpeg',
+      'src/assets/Img-8ano/img12.jpeg',
+      'src/assets/Img-8ano/img13.jpeg',
+      'src/assets/Img-8ano/img14.jpeg',
+      'src/assets/Img-8ano/img15.jpeg',
+      'src/assets/Img-8ano/img16.jpeg',
+      'src/assets/Img-8ano/img17.jpeg',
+      'src/assets/Img-8ano/img18.jpeg',
+      'src/assets/Img-8ano/img19.jpeg',
+      'src/assets/Img-8ano/img20.jpeg',
+      'src/assets/Img-8ano/img21.jpeg'
     ],
     equipeQtd: 4,
     professor: 'Corpo Docente do 8º Ano'
@@ -152,9 +164,9 @@ const projetos = [
     materiais: ['Maquete em escala física', 'Placas solares fotovoltaicas mini', 'Sensores de presença infravermelhos (PIR)', 'Semáforos com LEDs e Arduino', 'Peças modeladas em 3D'],
     resultados: 'Simulação com 40% de redução no consumo de energia na iluminação pública através de automação responsiva.',
     imagens: [
-      'https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1477959858617-67f30bc75b82?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=1200'
+      'src/assets/Img-9ano/img22.jpeg',
+      'src/assets/Img-9ano/img23.jpeg',
+      'src/assets/Img-9ano/img24.jpeg'
     ],
     equipeQtd: 4,
     professor: 'Corpo Docente do 9º Ano'
@@ -2023,7 +2035,7 @@ function renderSobre(pushHash = true) {
       {
         icone: '⏰',
         titulo: 'Horário & Acesso',
-        valor: '9h às 16h',
+        valor: '8h às 11h',
         sub: 'Aberto a pais, comunidade e visitantes',
         cor: '#10b981'
       },

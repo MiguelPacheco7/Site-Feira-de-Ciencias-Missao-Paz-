@@ -66,6 +66,19 @@ const imagens9Ano = Object.entries(
   .map(([, url]) => url);
 
 
+const biodigestor = Object.entries(
+  import.meta.glob(
+    './assets/biodigestor/**/*.{avif,gif,jpg,jpeg,png,webp,AVIF,GIF,JPG,JPEG,PNG,WEBP}',
+    {
+      eager: true,
+      query: '?url',
+      import: 'default',
+    }
+  )
+)
+  .sort(([a], [b]) => a.localeCompare(b, 'pt-BR', { numeric: true }))
+  .map(([, url]) => url);
+
 const projetos = [
   {
     id: 1,
@@ -344,11 +357,7 @@ const projetos = [
     ],
     materiais: ['Bombona hermética com selo d\'água', 'Válvula de retenção e corta-chama de segurança', 'Manômetro de pressão de gás', 'Filtro purificador', 'Bico de Bunsen para chama demonstrativa', 'Sobras orgânicas da cantina'],
     resultados: 'Produção contínua de biogás com chama azulada estável e 5L semanais de biofertilizante orgânico de alto rendimento.',
-    imagens: [
-      'https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1508873696983-2df5703bc20d?auto=format&fit=crop&q=80&w=1200'
-    ],
+    imagens: biodigestor,
     equipeQtd: 4,
     professor: 'Coordenação de Ciências da Natureza'
   }

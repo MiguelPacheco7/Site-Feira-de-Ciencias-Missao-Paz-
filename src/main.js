@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/next"
+
 // ============================================================
 // GUIA INTERATIVO DA FEIRA DE CIÊNCIAS 2026
 // Instituto Educacional Missão Paz

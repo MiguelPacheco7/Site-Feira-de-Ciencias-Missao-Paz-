@@ -68,6 +68,44 @@ const imagens9Ano = Object.entries(
   .sort(([a], [b]) => a.localeCompare(b, 'pt-BR', { numeric: true }))
   .map(([, url]) => url);
 
+const imagens1Ano = Object.entries(
+  import.meta.glob(
+    './assets/Img-1ano/**/*.{avif,gif,jpg,jpeg,png,webp,AVIF,GIF,JPG,JPEG,PNG,WEBP}',
+    {
+      eager: true,
+      query: '?url',
+      import: 'default',
+    }
+  )
+)
+  .sort(([a], [b]) => a.localeCompare(b, 'pt-BR', { numeric: true }))
+  .map(([, url]) => url);
+
+const imagens2ano = Object.entries(
+  import.meta.glob(
+    './assets/Img-2ano/**/*.{avif,gif,jpg,jpeg,png,webp,AVIF,GIF,JPG,JPEG,PNG,WEBP}',
+    {
+      eager: true,
+      query: '?url',
+      import: 'default',
+    }
+  )
+)
+  .sort(([a], [b]) => a.localeCompare(b, 'pt-BR', { numeric: true }))
+  .map(([, url]) => url);
+
+const imagens3ano = Object.entries(
+  import.meta.glob(
+    './assets/Img-3ano/**/*.{avif,gif,jpg,jpeg,png,webp,AVIF,GIF,JPG,JPEG,PNG,WEBP}',
+    {
+      eager: true,
+      query: '?url',
+      import: 'default',
+    }
+  )
+)
+  .sort(([a], [b]) => a.localeCompare(b, 'pt-BR', { numeric: true }))
+  .map(([, url]) => url);
 
 const biodigestor = Object.entries(
   import.meta.glob(
@@ -245,11 +283,7 @@ const projetos = [
     ],
     materiais: ['Sensores higrômetros de solo', 'Bomba d\'água submersível 5V/12V', 'Módulo relé acionador', 'Tubulação de microgotejamento', 'Sensor de pH do solo', 'App móvel de monitoramento'],
     resultados: 'Economia comprovada de mais de 60% de água comparada a sistemas convencionais de rega manual.',
-    imagens: [
-      'https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1581092921461-eab62e97a782?auto=format&fit=crop&q=80&w=1200'
-    ],
+    imagens: imagens1Ano,
     equipeQtd: 4,
     professor: 'Corpo Docente da 1ª Série EM'
   },
@@ -283,11 +317,7 @@ const projetos = [
     ],
     materiais: ['Painel solar fotovoltaico 20W', 'Controlador de carga PWM', 'Bateria selada estacionária 12V', 'Inversor/regulador de tensão', 'Fitas LED de alta eficiência', 'Motores elétricos DC'],
     resultados: 'Geração autônoma de até 20W capaz de alimentar iluminação e pequenos motores de forma 100% limpa.',
-    imagens: [
-      'https://images.unsplash.com/photo-1508514177221-188b1cf16f9e?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1558441719-8b489c63f7d2?auto=format&fit=crop&q=80&w=1200'
-    ],
+    imagens: imagens2ano,
     equipeQtd: 4,
     professor: 'Corpo Docente da 2ª Série EM'
   },
@@ -320,13 +350,9 @@ const projetos = [
       { nome: 'Tecnologia', icone: '💻', funcao: 'Criação de aplicativos (Reciclagem e Água), site ODS e automação de controle de acesso.' },
       { nome: 'Educação Física', icone: '⚽', funcao: 'Ergonomia no ambiente digital, saúde postural e prevenção de LER/DORT.' }
     ],
-    materiais: ['Ambiente de desenvolvimento web/mobile', 'Microcontrolador ESP32', 'Sensor ultrassônico HC-SR04', 'Servo motor SG90 de portão', 'Protótipo mecânico de acesso'],
+    materiais: ['Ambiente de desenvolvimento web/mobile'],
     resultados: 'Lançamento de 3 ferramentas digitais completas e protótipo de automação de acesso com resposta em 0.2s.',
-    imagens: [
-      'https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200'
-    ],
+    imagens: imagens3ano,
     equipeQtd: 4,
     professor: 'Corpo Docente da 3ª Série EM'
   },

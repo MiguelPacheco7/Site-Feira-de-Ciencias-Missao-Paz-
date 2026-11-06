@@ -1,4 +1,4 @@
-import { Analytics } from "@vercel/analytics/next"
+import { inject } from '@vercel/analytics';
 
 // ============================================================
 // GUIA INTERATIVO DA FEIRA DE CIÊNCIAS 2026
@@ -2243,6 +2243,10 @@ let __appInited = false;
 function initApp() {
   if (__appInited) return;
   __appInited = true;
+  
+  // Inicializa Vercel Web Analytics
+  inject();
+  
   initThemeToggle();
   createParticles();
   bindNavButtons();

@@ -1,4 +1,5 @@
-import { Analytics } from "@vercel/analytics/next"
+import { inject } from '@vercel/analytics';
+inject({ mode: import.meta.env.DEV ? 'development' : 'production' });
 
 // ============================================================
 // GUIA INTERATIVO DA FEIRA DE CIÊNCIAS 2026
